@@ -1,0 +1,27 @@
+.html
+{
+    height: 100%;
+}
+
+.login-page
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 640px;
+}
+
+.login-page .container
+{
+    max-width: 640px;
+}
+
+.exampleTextarea
+{
+    resize: none;
+}
+
+.navbar .nav-link
+{
+    white-space: nowrap;
+}
