@@ -1,0 +1,70 @@
+<%- include('header') %>
+
+
+<div>
+    <h2><b>Vietiniai mokėjimai</b></h2>
+
+
+    <label class="mr-sm-2" for="inlineFormCustomSelect">Mano sąskaitos ir mokėjimo ruošiniai</label>
+    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">Jono sąskaita</option>
+        <option value="2">Petro sąskaita</option>
+        <option value="3">Onutės sąskaita</option>
+    </select>
+
+
+    <div class="form-group">
+        <label for="exampleInputName">Gavėjo pavadinimas</label>
+        <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputText">Gavėjo sąskaitos numeris</label>
+        <input type="text" class="form-control" id="exampleInputText" placeholder="Enter bank account number">
+    </div>
+
+    <form class="form-inline">
+        <label class="mr-sm-2" for="inlineFormCustomSelect">Suma ir Valiuta</label>
+        <input type="text" name="Amount" placeholder="suma">
+        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">Eur</option>
+            <option value="2">Nok</option>
+            <option value="3">Lyra</option>
+        </select>
+
+    </form>
+
+
+
+
+    <fieldset class="form-group">
+        <legend>Mokėjimo informacijos tipas</legend>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Mokėjimo paskirtis
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                Įmokos kodas (nuoroda gavėjui)
+            </label>
+        </div>
+
+        <div class="text">
+            <label for="exampleTextarea">Mokėjimo paskirtis</label>
+            <textarea class="form-control" id="exampleTextarea" rows="4" cols="50"></textarea>
+        </div>
+
+    <button type="submit" class="btn btn-primary">Toliau</button>
+
+</fieldset>
+</div>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
